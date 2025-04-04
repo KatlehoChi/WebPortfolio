@@ -1,0 +1,529 @@
+/* Basic reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #5e280e; /* Beige aesthetic */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    height: 500px; /* Adjust as needed */
+    background-image: url('Brown aesthetic.jpeg'); /* Replace with your chosen image */
+    background-size: cover;
+    background-position: center;
+    color: #1a0202;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #deb887; /* Beige aesthetic */
+    padding: 15px 20px;
+    border-radius: 8px; /* Soft edges for elegance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 90%; /* Centered and responsive width */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    padding: 5px 10px;
+    border-radius: 4px; /* Rounded edges for hover elements */
+}
+
+.navbar ul li a:hover {
+    background-color: #fff; /* Slight contrast on hover */
+    color: #deb887; /* Match beige tones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Responsive design for smaller screens */
+    }
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* About Me Styling */
+.about-me {
+    background-color: #fdf5e6; /* Light beige for subtle contrast */
+    padding: 50px 20px;
+    border-radius: 10px; /* Rounded edges for a soft appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Depth with shadow */
+    max-width: 800px;
+    margin: 30px auto; /* Centered alignment */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.about-me:hover {
+    transform: scale(1.02); /* Slight enlargement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.about-me h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-me p {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+}
+
+
+
+#education {
+    background: linear-gradient(to right, #86472479, #ffffff); /* Light gradient background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.education-card {
+    background: #ffffff; /* White card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.education-card h3 {
+    color: #007BFF; /* Blue headings */
+}
+
+.education-card p {
+    color: #333;
+}
+
+/* CV Download Button */
+.cv-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cv-btn {
+    display: inline-block;
+    background-color: #deb887; /* Beige aesthetic */
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-btn:hover {
+    background-color: #c5a16f;
+    transform: scale(1.05);
+}
+
+
+
+/* Programming Languages Section */
+.languages {
+    background-color: #fdf5e6;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Language Card Container */
+.language-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.language-card {
+    background: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover Effect */
+.language-card:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.language-card img {
+    width: 60px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animate icon on hover */
+.language-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Icon Styling */
+.interest-card img {
+    width: 60px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animate icon on hover */
+.interest-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Interests Section */
+.interests-section {
+    background-color: #fdf5e6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Interests Container */
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    perspective: 1000px; /* Enables 3D effect */
+}
+
+/* Individual Interest Cards */
+.interest-item {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.interest-item:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+}
+
+/* Content Styling */
+.interest-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Icons Styling */
+.interest-content img {
+    width: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.interest-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Personal Interests Section */
+.personal-interests-section {
+    background-color: #fdf5e6; /* Light beige */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Interests Grid */
+.personal-interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Interest Cards */
+.interest-card {
+    background: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Hover Effect */
+.interest-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.interest-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.interest-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+/* Goals Section */
+.goals-section {
+    background-color: #f5e3c3; /* Beige nude aesthetic */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Heading Styling */
+.goals-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.goals-section p {
+    font-size: 1.3em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f5e3c3; /* Beige nude aesthetic */
+    padding: 50px 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Button Styling */
+button {
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Success Message */
+#success-message {
+    font-size: 1.2em;
+    color: green;
+    margin-top: 20px;
+}
+
+
+/* Footer Styling */
+.footer {
+    background: url('footer.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 30px 20px; /* Slim yet full-width footer */
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Hoverable Semi-Transparent Overlay */
+.footer-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Default overlay */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: auto;
+    transition: background 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect for Overlay */
+.footer-overlay:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+/* Left Section (Quote) */
+.footer-left {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Right Section (Contact Info) */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    font-size: 1em;
+}
+
+/* Contact Info Styling */
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    margin-top: 15px;
+}
+
+.back-to-top a {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-to-top a:hover {
+    background-color: #ddd;
+}
+
+/* Copyright Notice */
+.copyright {
+    margin-top: 15px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+
+
+
